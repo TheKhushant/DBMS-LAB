@@ -32,7 +32,7 @@ select * from Employee;                                    |--------to view tabl
 
 ____________________________________________________________________
 ####################################################################
-
+CODE : 
 CREATE TABLE Employee (
 Sr_No INTEGER,
 Ename VARCHAR(20)
