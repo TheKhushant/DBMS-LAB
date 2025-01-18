@@ -19,9 +19,16 @@ eg :                           _
     desc Employee;             |---- to show table information
 --------------------------------------------------------------------
                       INSERT DATA INTO TABLE:
-  
-
-
+INSERT INTO Employee (Sr_No, Ename) values (1,'Yash');     |-------- for Single Line.
+                                                          _
+INSERT all                                                 |
+    INTO Employee (Sr_No, Ename) VALUES(1, 'Yash')         |
+    INTO Employee (Sr_No, Ename) VALUES(2, 'Khushant')     |--------for multtiple insert.
+    INTO Employee (Sr_No, Ename) VALUES(3, 'Jay')          |
+    INTO Employee (Sr_No, Ename) VALUES(4, 'Sanju')        |
+select * from Employee;                                   _|
+                                                            
+select * from Employee;                                    ---------to view table.
 
 ____________________________________________________________________
 ####################################################################
