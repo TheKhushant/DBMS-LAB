@@ -33,5 +33,45 @@ select * from Employee;                                    |--------to view tabl
 ____________________________________________________________________
 ####################################################################
 
+CREATE TABLE Employee (
+Sr_No INTEGER,
+Ename VARCHAR(20)
+);
 
-            
+desc Employee;
+
+use yashdbmslab;
+
+INSERT INTO Employee (Sr_No, Ename) values (5,'Ganesh');
+INSERT all
+    INTO Employee (Sr_No, Ename) VALUES(1, 'Yash')
+    INTO Employee (Sr_No, Ename) VALUES(2, 'Khushant')
+    INTO Employee (Sr_No, Ename) VALUES(3, 'Jay')
+    INTO Employee (Sr_No, Ename) VALUES(4, 'Sanju')
+select * from Employee;
+
+alter table Employee 
+add EmpDob date;
+
+desc Employee;
+
+INSERT INTO Employee (Sr_No, Ename,EMPDOB) values (5, 'Ganesh',to_date('15-01-2025','dd-mm-yyyy'));
+
+INSERT all
+    INTO Employee (Sr_No, Ename,EMPDOB) VALUES (1, 'Yash',to_date('15-05-2022','dd-mm-yyyy'))
+    INTO Employee (Sr_No, Ename,EMPDOB) VALUES (2, 'Khushant',to_date('15-04-2026','dd-mm-yyyy'))
+    INTO Employee (Sr_No, Ename,EMPDOB) VALUES (3, 'Jay',to_date('15-09-2027','dd-mm-yyyy'))
+    INTO Employee (Sr_No, Ename,EMPDOB) VALUES (4, 'Sanju',to_date('15-11-2021','dd-mm-yyyy'))
+select * from Employee;
+
+select * from Employee;
+
+
+DELETE FROM Employee e
+WHERE ROWID > (
+    SELECT MIN(ROWID)
+    FROM Employee
+    WHERE Sr_No = e.Sr_No AND Ename = e.Ename
+);
+
+DROP TABLE Employee;           
