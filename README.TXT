@@ -18,6 +18,8 @@ eg :                           _
 
     desc Employee;             |---- to show table information
 --------------------------------------------------------------------
+                      INSERT DATA INTO TABLE:
+  
 
 
 
