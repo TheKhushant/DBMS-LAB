@@ -4,8 +4,9 @@ DDL = data defination language
   |--> char (fixed length
   |--> varchar (not fixed , required space )
   |--> Date 
-
-create table _name of table_ (Column No integer(10), Ename char(20));
-
+to create table
+    create table _name of table_ (Column No integer(10), Ename char(20));
+to see detail of table
+    desc tableName
 
              colurm == attribute, row == tuple
