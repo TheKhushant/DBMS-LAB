@@ -28,7 +28,7 @@ INSERT all                                                 |
     INTO Employee (Sr_No, Ename) VALUES(4, 'Sanju')        |
 select * from Employee;                                   _|
                                                             
-select * from Employee;                                    ---------to view table.
+select * from Employee;                                    |--------to view table.
 
 ____________________________________________________________________
 ####################################################################
